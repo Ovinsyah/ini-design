@@ -1,16 +1,13 @@
 import * as React from 'react';
-import { Section } from './style';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import "./styles.scss";
-import { IniButton } from 'ini-design';
-
+import ViewHome from './views/Home';
 export default () => {
-  return (
-    <Section>
-      bem
-      <div>
-        ulala
-        <IniButton theme="primary">lolox</IniButton>
-      </div>
-    </Section>
-  );
+  return(
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={ ViewHome } />
+      </Switch>
+    </BrowserRouter>
+  )
 }
