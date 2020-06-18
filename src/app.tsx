@@ -1,15 +1,16 @@
-
 import * as React from 'react';
-import { hot } from "react-hot-loader/root";
-interface Props {
-   name: string
-}
+import { Section } from './style';
+import "./styles.scss";
+import { IniButton } from 'ini-design';
 
-class App extends React.Component<Props> {
-  render() {
-    const { name } = this.props;
-    return <div>Hello {name}</div>;
-  }
+export default () => {
+  return (
+    <Section>
+      bem
+      <div>
+        ulala
+        <IniButton theme="primary">lolox</IniButton>
+      </div>
+    </Section>
+  );
 }
-
-export default hot(App);

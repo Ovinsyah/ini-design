@@ -2,36 +2,24 @@
 
 Empty project.
 
-## Building and running on localhost
+# Ini Design
 
-First install dependencies:
-
-```sh
-npm install
+## Getting Started
 ```
-
-To run in hot module reloading mode:
-
-```sh
-npm start
+npm install --save ini-design styled-components
 ```
-
-To create a production build:
-
-```sh
-npm run build-prod
 ```
-
-To create a development build:
-
-```sh
-npm run build-dev
+yarn add ini-design styled-components
 ```
+## Usage
+```
+import { IniButton } from 'ini-design';
 
-## Running
-
-Open the file `dist/index.html` in your browser
-
-## Credits
-
-Made with [createapp.dev](https://createapp.dev/)
+const App = () => {
+  return (
+    <>
+      <IniButton theme="primary">Click Me</IniButton>
+    </>
+  )
+}
+```

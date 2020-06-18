@@ -1,0 +1,1 @@
+export { default as IniButton } from "./src/button";
