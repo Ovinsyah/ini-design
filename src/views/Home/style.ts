@@ -1,47 +1,16 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import Styled from 'styled-components';
 
-export const Section = styled.section`
-`;
-export const Header = styled.div`
-  background: black;
-  height: 70vh;
+export const LabelName = Styled.h1`
+  margin: 0px;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: column;
-  padding-bottom: 30px;
-  h1{
-    margin: 0;
-    font-size: 40px;
-    font-weight: 200;
-  }
-  p{
-    margin: 0 0 20px;
-    font-weight: 200;
-    font-size: 18px;
-  }
-`;
-export const Button = styled(Link)`
-  font-size: 16px;
-  background: transparent;
-  color: white;
-  border: 1px solid white;
-  height: 46px;
+  font-size: 4rem;
+`; 
+export const MainContent = Styled.div`
+  background: #FFAFBD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-  padding: 0px 30px;
-  border-radius: 61px;
-  outline: none;
-  box-shadow: none;
-  cursor: pointer;
-  transition: all .3s;
-  &:hover{
-    background: white;
-    color: black;
-    transition: all .3s;
-  }
-`;
+`; 

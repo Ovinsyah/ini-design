@@ -1,27 +1,37 @@
-<p align="center">
-  <a href="http://ovinsyah.com/">
-    <img width="200" src="https://ovinsyah.com/ini-logo.png" alt="Ini logo">
-  </a>
-  <h1 align="center">Ini Design</h1>
-</p>
+# empty-project
 
-## Getting Started
-```
-npm install ini-design
-```
-```
-yarn add ini-design
-```
-## Usage
-```jsx
-import "ini-design/dist/ini.scss"
-import { IniButton } from 'ini-design';
+Empty project.
 
-const App = () => {
-  return (
-    <>
-      <IniButton theme="primary">Click Me</IniButton>
-    </>
-  )
-}
+## Building and running on localhost
+
+First install dependencies:
+
+```sh
+npm install
 ```
+
+To run in hot module reloading mode:
+
+```sh
+npm start
+```
+
+To create a production build:
+
+```sh
+npm run build-prod
+```
+
+To create a development build:
+
+```sh
+npm run build-dev
+```
+
+## Running
+
+Open the file `dist/index.html` in your browser
+
+## Credits
+
+Made with [createapp.dev](https://createapp.dev/)

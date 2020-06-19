@@ -3,6 +3,6 @@ import * as ReactDOM from "react-dom";
 
 import App from './app';
 import "./styles.scss";
-
+document.title = "Hanami";
 var mountNode = document.getElementById("app");
 ReactDOM.render(<App />, mountNode);
