@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
   entry: [
@@ -32,6 +31,14 @@ const config = {
           'css-loader',
           'sass-loader'
         ]
+      },
+      {
+        test: /\.(woff2?|ttf|otf|eot|svg)$/,
+        exclude: /node_modules/,
+        loader: 'file-loader',
+        options: {
+            name: '[path][name].[ext]'
+        }
       }
     ]
   },
@@ -47,16 +54,12 @@ const config = {
     }
   },
   devServer: {
-    contentBase: './dist'
+    compress: true,
+    contentBase: './dist',
+    publicPath: '/',
+    historyApiFallback: true
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-        template: require('html-webpack-template'),
-        inject: false,
-        appMountId: 'app',
-        filename: 'index.html'
-      })
-  ]
+  stats: 'errors-only'
 };
 
 module.exports = config;

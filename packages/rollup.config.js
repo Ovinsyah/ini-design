@@ -5,7 +5,7 @@ import postcss from 'rollup-plugin-postcss';
 import babel from "rollup-plugin-babel";
 import external from "rollup-plugin-peer-deps-external";
 import resolve from "rollup-plugin-node-resolve";
-import json from '@rollup/plugin-json';
+import scss from 'rollup-plugin-scss'
 
 import pkg from "./package.json";
 
@@ -26,11 +26,13 @@ export default {
     }
   ],
   plugins: [
+    scss({
+      output: './dist/ini.scss',
+    }),
     del({ targets: ['dist/*'] }),
     external(),
-    json(),
     resolve({
-      extensions: ['.ts', '.tsx', '.json']
+      extensions: ['.ts', '.tsx']
     }),
     babel({
       exclude: "node_modules/**"
@@ -51,5 +53,4 @@ export default {
       }
     })
   ],
-  external: ['react', 'react-router-dom', 'styled-components']
 };

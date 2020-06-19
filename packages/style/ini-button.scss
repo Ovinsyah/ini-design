@@ -1,0 +1,35 @@
+@import "./lib-color.scss";
+@mixin button-base($bgColor, $hoverBgColor, $textColor) {
+  border-radius: .3rem;
+  font-size: 1rem;
+  padding: 0 .7rem;
+  height: 36px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  background: $bgColor;
+  border: 1px solid $bgColor;
+  color: $textColor;
+  transition: all .3s;
+  &:hover{
+    background: $hoverBgColor;
+    transition: all .3s;
+  }
+}
+.ini-btn{
+  &-primary{
+    @include button-base($primary, $primaryDark, white)
+  }
+  &-info{
+    @include button-base($primary, $primaryDark, white)
+  }
+  &-success{
+    @include button-base($primary, $primaryDark, white)
+  }
+  &-danger{
+    @include button-base($primary, $primaryDark, white)
+  }
+  &-warning{
+    @include button-base($primary, $primaryDark, white)
+  }
+}

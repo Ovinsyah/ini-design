@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Button } from './style';
 
 interface DefaultModel{
   children: React.ReactNode;
@@ -9,6 +8,6 @@ interface DefaultModel{
 export default (props: DefaultModel) => {
   const { children, theme } = props;
   return (
-    <Button theme={theme}>{children}</Button>
+    <button className={theme ? `ini-btn-${theme}`: ''}>{children}</button>
   )
 }

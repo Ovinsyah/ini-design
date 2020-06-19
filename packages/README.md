@@ -7,13 +7,14 @@
 
 ## Getting Started
 ```
-npm install --save ini-design styled-components
+npm install ini-design
 ```
 ```
-yarn add ini-design styled-components
+yarn add ini-design
 ```
 ## Usage
 ```jsx
+import "ini-design/dist/ini.scss"
 import { IniButton } from 'ini-design';
 
 const App = () => {

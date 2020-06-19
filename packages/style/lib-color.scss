@@ -1,0 +1,23 @@
+//primary color
+$primary: #078289;
+$primaryLight: #3cbcc3;
+$primaryDark: #067076;
+//gray color
+$gray: #BEBEBE;
+$grayDark: #7A7A7A;
+//dark color
+$dark: #2E2E2E;
+//other
+$text: #2C2C2C;
+
+//export
+:export{
+  text: $text;
+  //primary color
+  primary: $primary;
+  primaryLight: $primaryLight;
+  primaryDark: $primaryDark;
+  //gray color
+  primary: $gray;
+  primaryDark: $grayDark;
+}
