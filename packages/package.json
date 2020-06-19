@@ -5,7 +5,7 @@
   "author": "ovinsyah <oviensyahalbayhaqy@gmail.com>",
   "homepage": "https://github.com/Ovinsyah/ini-design",
   "license": "ISC",
-  "main": "index.js",
+  "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "files": [

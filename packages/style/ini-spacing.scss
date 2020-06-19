@@ -1,0 +1,135 @@
+$marginSize: 0px, 8px, 16px, 24px, 32px, 40px;
+$positionMargin: '';
+$positionPadding: '';
+.ini-m{
+  @for $i from 1 through 4 {
+    @if $i == 1{
+      $positionMargin: 't' !global;
+    }
+    @else if $i == 2{
+      $positionMargin: 'b' !global;
+    }
+    @else if $i == 3{
+      $positionMargin: 'l' !global;
+    }
+    @else if $i == 4{
+      $positionMargin: 'r' !global;
+    }
+
+    &-#{$positionMargin}{
+      @for $j from 0 through 5 {
+        &-#{$j} {
+          @if $positionMargin == 't'{
+            margin-top: nth($marginSize, $j + 1) !important;
+          }
+          @else if $positionMargin == 'b'{
+            margin-bottom: nth($marginSize, $j + 1) !important;
+          }
+          @else if $positionMargin == 'l'{
+            margin-left: nth($marginSize, $j + 1) !important;
+          }
+          @else if $positionMargin == 'r'{
+            margin-right: nth($marginSize, $j + 1) !important;
+          }
+        }
+      }
+    }
+    @for $j from 0 through 5 {
+      &-t-b-#{$j},&-b-t-#{$j}{
+        margin-top: nth($marginSize, $j + 1) !important;
+        margin-bottom: nth($marginSize, $j + 1) !important;
+      }
+      &-l-r-#{$j},&-r-l-#{$j}{
+        margin-left: nth($marginSize, $j + 1) !important;
+        margin-right: nth($marginSize, $j + 1) !important;
+      }
+      &-t-l-#{$j},&-l-t-#{$j}{
+        margin-top: nth($marginSize, $j + 1) !important;
+        margin-left: nth($marginSize, $j + 1) !important;
+      }
+      &-b-l-#{$j},&-l-b-#{$j}{
+        margin-bottom: nth($marginSize, $j + 1) !important;
+        margin-left: nth($marginSize, $j + 1) !important;
+      }
+      &-t-r-#{$j},&-r-t-#{$j}{
+        margin-top: nth($marginSize, $j + 1) !important;
+        margin-right: nth($marginSize, $j + 1) !important;
+      }
+      &-b-r-#{$j},&-r-b-#{$j}{
+        margin-bottom: nth($marginSize, $j + 1) !important;
+        margin-right: nth($marginSize, $j + 1) !important;
+      }
+    }
+  }
+  @for $i from 0 through 5 {
+    &-#{$i} {
+      margin: nth($marginSize, $i + 1) !important;
+    }
+  }
+}
+
+.ini-p{
+  @for $i from 1 through 4 {
+    @if $i == 1{
+      $positionPadding: 't' !global;
+    }
+    @else if $i == 2{
+      $positionPadding: 'b' !global;
+    }
+    @else if $i == 3{
+      $positionPadding: 'l' !global;
+    }
+    @else if $i == 4{
+      $positionPadding: 'r' !global;
+    }
+    &-#{$positionPadding}{
+      @for $j from 0 through 5 {
+        &-#{$j} {
+          @if $positionPadding == 't'{
+            padding-top: nth($marginSize, $j + 1) !important;
+          }
+          @else if $positionPadding == 'b'{
+            padding-bottom: nth($marginSize, $j + 1) !important;
+          }
+          @else if $positionPadding == 'l'{
+            padding-left: nth($marginSize, $j + 1) !important;
+          }
+          @else if $positionPadding == 'r'{
+            padding-right: nth($marginSize, $j + 1) !important;
+          }
+        }
+      }
+    }
+    @for $j from 0 through 5 {
+      &-t-b-#{$j},&-b-t-#{$j}{
+        padding-top: nth($marginSize, $j + 1) !important;
+        padding-bottom: nth($marginSize, $j + 1) !important;
+      }
+      &-l-r-#{$j},&-r-l-#{$j}{
+        padding-left: nth($marginSize, $j + 1) !important;
+        padding-right: nth($marginSize, $j + 1) !important;
+      }
+      &-t-l-#{$j},&-l-t-#{$j}{
+        padding-top: nth($marginSize, $j + 1) !important;
+        padding-left: nth($marginSize, $j + 1) !important;
+      }
+      &-b-l-#{$j},&-l-b-#{$j}{
+        padding-bottom: nth($marginSize, $j + 1) !important;
+        padding-left: nth($marginSize, $j + 1) !important;
+      }
+      &-t-r-#{$j},&-r-t-#{$j}{
+        padding-top: nth($marginSize, $j + 1) !important;
+        padding-right: nth($marginSize, $j + 1) !important;
+      }
+      &-b-r-#{$j},&-r-b-#{$j}{
+        padding-bottom: nth($marginSize, $j + 1) !important;
+        padding-right: nth($marginSize, $j + 1) !important;
+      }
+    }
+  }
+  @for $i from 0 through 5 {
+    &-#{$i} {
+      padding: nth($marginSize, $i + 1) !important;
+    }
+  }
+}

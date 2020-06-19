@@ -1,7 +1,28 @@
 //primary color
 $primary: #078289;
-$primaryLight: #3cbcc3;
-$primaryDark: #067076;
+$primaryLight: #0AA2AB;
+$primaryDark: #067177;
+
+//info color
+$info: #37B7C9;
+$infoLight: #43CEE1;
+$infoDark: #30A3B3;
+
+//success color
+$success: #70D0AD;
+$successLight: #65C09F;
+$successDark: #53AE8D;
+
+//warning color
+$warning: #EBAE30;
+$warningLight: #F5BC45;
+$warningDark: #DCA128;
+
+//danger color
+$danger: #E65655;
+$dangerLight: #EE6C6B;
+$dangerDark: #CD4443;
+
 //gray color
 $gray: #BEBEBE;
 $grayDark: #7A7A7A;
@@ -17,7 +38,28 @@ $text: #2C2C2C;
   primary: $primary;
   primaryLight: $primaryLight;
   primaryDark: $primaryDark;
+
+  //info color
+  info: $info;
+  infoLight: $infoLight;
+  infoDark: $infoDark;
+
+  //success color
+  success: $success;
+  successLight: $successLight;
+  successDark: $successDark;
+
+  //warning color
+  warning: $warning;
+  warningLight: $warningLight;
+  warningDark: $warningDark;
+
+  //danger color
+  danger: $danger;
+  dangerLight: $dangerLight;
+  dangerDark: $dangerDark;
+
   //gray color
-  primary: $gray;
-  primaryDark: $grayDark;
+  gray: $gray;
+  grayDark: $grayDark;
 }
