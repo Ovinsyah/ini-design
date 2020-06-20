@@ -6,7 +6,7 @@ import ViewButton from './views/Button';
 import "ini-design/dist/ini.scss"
 export default () => {
   return(
-    <BrowserRouter>
+    <BrowserRouter basename="/ini-design">
       <Switch>
         <Route exact path="/" component={ ViewHome } />
         <Route exact path="/documentation/component/button" component={ ViewButton } />
