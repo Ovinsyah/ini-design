@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './views/Home'
 export default () => {
   return(
-    <BrowserRouter>
+    <BrowserRouter basename="/ini-design">
       <Switch>
         <Route exact path="/" component={ Home } />
       </Switch>
