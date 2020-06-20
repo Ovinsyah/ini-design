@@ -57,7 +57,8 @@ const config = {
     compress: true,
     contentBase: './dist',
     publicPath: '/',
-    historyApiFallback: true
+    historyApiFallback: true,
+    hot: true
   },
   stats: 'errors-only'
 };

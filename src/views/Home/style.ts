@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 
 export const Section = styled.section`
 `;
+export const SectionGettingStarted = styled.div`
+  display: flex;
+  align-items: center;
+`;
 export const Header = styled.div`
   background: black;
   height: 70vh;
@@ -37,6 +41,8 @@ export const Button = styled(Link)`
   border-radius: 61px;
   outline: none;
   box-shadow: none;
+  width: 200px;
+  margin: 0 8px;
   cursor: pointer;
   transition: all .3s;
   &:hover{

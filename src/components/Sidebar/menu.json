@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Getting Started",
+    "list": [
+      {
+        "title": "Introduction",
+        "url":  "/introduction"
+      },
+      {
+        "title": "Installation",
+        "url":  "/installation"
+      }
+    ]
+  },
+  {
+    "title": "Foundation",
+    "list": [
+    ]
+  },
+  {
+    "title": "Components",
+    "list": [
+      {
+        "title": "Button",
+        "url":  "/component/button"
+      },
+      {
+        "title": "Input",
+        "url":  "/component/input"
+      }
+    ]
+  }
+]
