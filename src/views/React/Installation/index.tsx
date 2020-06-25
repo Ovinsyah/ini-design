@@ -1,12 +1,17 @@
 import * as React from 'react';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import Layout from '../../../layouts/Dashboard';
 
 export default () => {
   return (
     <Layout title="Installation" description="Ini Installation">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <SyntaxHighlighter language="javascript" style={dracula}>
+        npm i ini-design
+      </SyntaxHighlighter>
+      <SyntaxHighlighter language="javascript" style={dracula}>
+        yarn add ini-design
+      </SyntaxHighlighter>
     </Layout>
   );
 };

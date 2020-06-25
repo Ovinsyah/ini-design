@@ -1,12 +1,15 @@
 import * as React from 'react';
 import Layout from '../../layouts/Dashboard';
+import { Article } from './style';
+
 
 export default (props: {isInicss?: boolean}) => {
+  const description = `Build your beautiful website quickly using IniDesign. We have provided a guide that you can learn on our site. guidelines that we provide in the form of foundation and components.`;
   return (
-    <Layout inicss={props.isInicss} title="Introduction" description="Ini Introduction">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+    <Layout inicss={props.isInicss} title="Introduction" description={description}>
+      <Article>
+        <img src="/images/schema-foundation.svg" alt="Schema foundation" />
+      </Article>
     </Layout>
   );
 };

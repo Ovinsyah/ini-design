@@ -7,8 +7,8 @@ import ViewIntroduction from './views/Introduction';
 
 import ViewInstallation from './views/React/Installation';
 
-import "ini-design/dist/ini.scss";
-// import "ini-design/style/ini.scss";
+// import "ini-design/dist/ini.scss";
+import "ini-design/style/ini.scss";
 
 export default () => {
   return(
