@@ -24,7 +24,7 @@ export default () => {
         <h1>Ini Design</h1>
         <p>User interface to build your amazing website</p>
         <SectionGettingStarted>
-          <Button to="/inicss/introduction">Ini Css</Button>
+          <Button to="/inicss/introduction" disabled={true}>Ini Css</Button>
           <Button to="/react/introduction">React Component</Button>
         </SectionGettingStarted>
       </Header>

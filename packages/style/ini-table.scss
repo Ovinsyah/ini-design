@@ -1,0 +1,40 @@
+@import "./lib-color.scss";
+.ini-table{
+  width: 100%;
+  background: white;
+  text-align: left;
+  border-spacing: 0;
+  font-size: 14px;
+  thead tr th,
+  tbody tr td {
+    padding: 0.78571429em 0.78571429em;
+  }
+  thead {
+    border-spacing: 0;
+    background: #e4e4e4;
+  }
+  tbody tr td {
+    border-bottom: 1px solid $grayLight;
+  }
+  &.striped tbody tr:nth-of-type(even) {
+    background: #f7f7f7;
+  }
+  &.bordered {
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    thead tr th {
+      border-right: 1px solid #fff;
+    }
+    tbody tr td {
+      border: 0px solid #eaeaea;
+      border-width: 0px 1px 1px 0px;
+    }
+    tbody tr td:last-child,
+    thead tr th:last-child {
+      border-right: none;
+    }
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+  }
+}

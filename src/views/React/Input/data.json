@@ -1,0 +1,30 @@
+[
+  {
+    "props": "filled",
+    "type": "boolean",
+    "defaultValue": "false",
+    "required": "false",
+    "description": "true | false"
+  },
+  {
+    "props": "full",
+    "type": "boolean",
+    "defaultValue": "false",
+    "required": "false",
+    "description": "true | false"
+  },
+  {
+    "props": "error",
+    "type": "string",
+    "defaultValue": "-",
+    "required": "false",
+    "description": "-"
+  },
+  {
+    "props": "label",
+    "type": "string",
+    "defaultValue": "-",
+    "required": "false",
+    "description": "-"
+  }
+]

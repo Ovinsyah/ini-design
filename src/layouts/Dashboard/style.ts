@@ -7,15 +7,16 @@ export const Article = styled.article`
 `;
 export const SectionSidebar = styled.div`
   flex: 1;
-  height: calc(100vh - 64px);
+  height: 100vh;
   max-width: 220px;
-  padding: 32px;
   border-right: 1px solid #eaeaea;
   position: sticky;
-  top: 64px;
+  top: 0px;
   overflow: auto;
 `;
 export const Content = styled.div`
   flex: 1;
   padding: 32px;
+  max-width: 1020px;
+  margin: 0 auto;
 `;

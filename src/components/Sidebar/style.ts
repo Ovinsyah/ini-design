@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const Section = styled.div`
+  padding: 24px;
+`;
+export const HeaderLogo = styled.div`
+  margin-bottom: 16px;
+`;
 export const Menus = styled.ul`
   list-style: none;
   padding: 0px;

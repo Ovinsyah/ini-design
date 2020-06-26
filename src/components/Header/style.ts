@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Header = styled.header`
   padding-bottom: 1rem;
   border-bottom: 1px solid #dddddd;
-  margin-bottom: 3rem;
+  margin-bottom: 32px;
 `;
 export const Title = styled.h1`
   font-size: 32px;

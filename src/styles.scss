@@ -11,3 +11,12 @@ a{
 img{
   max-width: 100%;
 }
+pre.markdown{
+  padding: 24px !important;
+  code{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 2;
+  }
+}

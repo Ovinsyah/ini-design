@@ -12,6 +12,8 @@
   color: $textColor;
   transition: all .3s;
   font-size: 14px;
+  display: inline-flex;
+  align-items: center;
   &:hover{
     background: $hoverBgColor;
     transition: all .3s;
@@ -64,7 +66,48 @@
     height: 46px;
     font-size: 16px;
   }
-  &-rounded{
+}
+button{
+  &.rounded{
     border-radius: 1rem;
+  }
+  &.disabled{
+    pointer-events: none;
+    opacity: 0.3;
+  }
+  &.laoding{
+    position: relative;
+    color: transparent;
+    justify-content: center;    
+    &::after, &::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: white;
+      opacity: 0.6;
+      position: absolute;
+      -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+      animation: sk-bounce 2.0s infinite ease-in-out;
+    }
+    
+    &::after {
+      -webkit-animation-delay: -1.0s;
+      animation-delay: -1.0s;
+    }
+  }
+}
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
   }
 }

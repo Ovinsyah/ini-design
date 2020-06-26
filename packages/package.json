@@ -1,6 +1,6 @@
 {
   "name": "ini-design",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Ui design with reactjs",
   "author": "ovinsyah <oviensyahalbayhaqy@gmail.com>",
   "homepage": "https://github.com/Ovinsyah/ini-design",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ovinsyah/ini-design"
+    "url": "git+https://github.com/Ovinsyah/ini-design.git"
   },
   "peerDependencies": {
     "react": "^16.11.0",
@@ -47,5 +47,8 @@
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Ovinsyah/ini-design/issues"
   }
 }

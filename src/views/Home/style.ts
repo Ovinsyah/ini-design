@@ -1,5 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
+
+interface DefaultModel {
+  disabled?: boolean;
+}
 
 export const Section = styled.section`
 `;
@@ -27,7 +31,7 @@ export const Header = styled.div`
     font-size: 18px;
   }
 `;
-export const Button = styled(Link)`
+export const Button = styled(Link)<DefaultModel>`
   font-size: 16px;
   background: transparent;
   color: white;
@@ -50,4 +54,8 @@ export const Button = styled(Link)`
     color: black;
     transition: all .3s;
   }
+  ${props => props.disabled && css`
+    pointer-events: none;
+    opacity: .3;
+  `};
 `;

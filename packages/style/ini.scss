@@ -1,6 +1,12 @@
 @import "./ini-button.scss";
 @import "./ini-spacing.scss";
 @import "./ini-container.scss";
+@import "./ini-typography.scss";
+@import "./ini-heading.scss";
+@import "./ini-divider.scss";
+@import "./ini-table.scss";
+@import "./ini-input.scss";
+@import "./ini-utility.scss";
 
 *,
 *::before,
@@ -26,4 +32,16 @@ select{
 }
 a{
   text-decoration: none;
+}
+@font-face {
+  font-family: 'ini';
+  src: url('https://ovinsyah.com/espresso-icon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}     
+.ini-icon{
+  font-family: "ini";
+  font-style: normal;
+  font-weight: normal;
+  color: $gray;
 }

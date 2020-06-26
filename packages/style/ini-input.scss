@@ -1,0 +1,61 @@
+@import "./lib-color.scss";
+
+.ini-input{
+  border: 1px solid $gray;
+  border-radius: .28571429rem;
+  padding: .715em 1em;
+  margin: 0;
+  color: $dark;
+  font-size: 1em;
+  width: 100%;
+  -webkit-appearance: none;
+  max-width: 240px;
+  &::placeholder{
+    color: $gray;
+  }
+  &-filled{
+    background: $grayLight;
+  }
+  &-error{
+    border-color: $danger;
+  }
+  &-label{
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: $dark;
+  }
+}
+.ini-section-input-search{
+  width: 240px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  .ic-search{
+    font-size: 24px;
+    position: absolute;
+    left: 12px;
+  }
+  .ini-input{
+    padding-left: 40px;
+  }
+
+}
+.ini-section-input-password{
+  width: 240px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  .ini-icon{
+    cursor: pointer;
+  }
+  .ic-eye{
+    font-size: 24px;
+    position: absolute;
+    right: 12px;
+  }
+  .ini-input{
+    padding-right: 40px;
+  }
+
+}

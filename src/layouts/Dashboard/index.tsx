@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Section, Article, SectionSidebar, Content } from './style';
-import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 import Header from '../../components/Header';
 
@@ -15,7 +14,6 @@ export default (props: DefaultModel) => {
   const { children, title, description, inicss } = props;
   return (
     <Section>
-      <Navbar/>
       <Article>
         <SectionSidebar><Sidebar inicss={inicss} /></SectionSidebar>
         <Content>

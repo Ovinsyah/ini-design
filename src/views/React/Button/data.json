@@ -1,0 +1,44 @@
+[
+  {
+    "props": "theme",
+    "type": "string",
+    "defaultValue": "-",
+    "required": "false",
+    "description": "primary | info | success | warning | danger | default"
+  },
+  {
+    "props": "size",
+    "type": "string",
+    "defaultValue": "-",
+    "required": "false",
+    "description": "large"
+  },
+  {
+    "props": "outline",
+    "type": "boolean",
+    "defaultValue": "false",
+    "required": "false",
+    "description": "true | false"
+  },
+  {
+    "props": "rounded",
+    "type": "boolean",
+    "defaultValue": "false",
+    "required": "false",
+    "description": "true | false"
+  },
+  {
+    "props": "href",
+    "type": "string",
+    "defaultValue": "-",
+    "required": "false",
+    "description": "-"
+  },
+  {
+    "props": "laoding",
+    "type": "boolean",
+    "defaultValue": "false",
+    "required": "false",
+    "description": "true | false"
+  }
+]
