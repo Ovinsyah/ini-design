@@ -4,17 +4,25 @@
     "list": [
       {
         "title": "Introduction",
-        "url":  "/introduction"
+        "url":  "/react/introduction"
       },
       {
         "title": "Installation",
-        "url":  "/installation"
+        "url":  "/react/installation"
       }
     ]
   },
   {
     "title": "Foundation",
     "list": [
+      {
+        "title": "Grids",
+        "url":  "/react/foundation/grids"
+      },
+      {
+        "title": "Flexbox",
+        "url":  "/react/foundation/flexbox"
+      }
     ]
   },
   {
@@ -22,11 +30,11 @@
     "list": [
       {
         "title": "Button",
-        "url":  "/component/button"
+        "url":  "/react/component/button"
       },
       {
         "title": "Input",
-        "url":  "/component/input"
+        "url":  "/react/component/input"
       }
     ]
   }

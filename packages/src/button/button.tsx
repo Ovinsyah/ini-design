@@ -10,7 +10,7 @@ interface DefaultModel extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   onClick?: () => void;
 }
 
-export default ({ children, href, theme, outline, size, rounded, laoding, ...props }: DefaultModel) => {
+export default ({ href, theme, outline, size, rounded, laoding, ...props }: DefaultModel) => {
   if (href){
     return (
       <a
@@ -24,7 +24,7 @@ export default ({ children, href, theme, outline, size, rounded, laoding, ...pro
           (laoding ? " laoding" : "") +
           (props.className ? (" " + props.className) : "")
         }
-      >{children}</a>
+      >{props.children}</a>
     );
   }
   return (
@@ -38,7 +38,7 @@ export default ({ children, href, theme, outline, size, rounded, laoding, ...pro
         (props.className ? (" " + props.className) : "")
       }
     >
-      {children}
+      {props.children}
     </button>
   );
 };

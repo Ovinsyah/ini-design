@@ -22,7 +22,8 @@ export default ({ filled, full, error, label, ...props }: DefaultModel) => {
             "ini-input" +
             (filled ? " ini-input-filled" : "") +
             (full ? " ini-w-100" : "") +
-            (error ? " ini-input-error" : "")
+            (error ? " ini-input-error" : "") +
+            (props.className ? (" " + props.className) : "")
           }/>
           {error && <span className="ini-message-error">{error}</span>}
           {isShow ? <i onClick={() => setIsShow(false)} className="ini-icon ic-eye">&#xe83e;</i> : <i onClick={() => setIsShow(true)} className="ini-icon ic-eye">&#xe83f;</i>}
@@ -41,7 +42,8 @@ export default ({ filled, full, error, label, ...props }: DefaultModel) => {
             "ini-input" +
             (filled ? " ini-input-filled" : "") +
             (full ? " ini-w-100" : "") +
-            (error ? " ini-input-error" : "")
+            (error ? " ini-input-error" : "") +
+            (props.className ? (" " + props.className) : "")
           }/>
           {error && <span className="ini-message-error">{error}</span>}
           <i className="ini-icon ic-search">&#xe81a;</i>
@@ -58,7 +60,8 @@ export default ({ filled, full, error, label, ...props }: DefaultModel) => {
           "ini-input" +
           (filled ? " ini-input-filled" : "") +
           (full ? " ini-w-100" : "") +
-          (error ? " ini-input-error" : "")
+          (error ? " ini-input-error" : "") +
+          (props.className ? (" " + props.className) : "")
         }/>
         {error && <span className="ini-message-error">{error}</span>}
     </React.Fragment>

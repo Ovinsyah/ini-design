@@ -26,7 +26,7 @@ export default (props: {inicss?: boolean}) => {
                 <Menus>
                   {
                     item.list.map((itemMenu, keyMenu) => {
-                      return <li key={keyMenu}><Link to={(props.inicss ? '/inicss' : '/react') + itemMenu.url}>{itemMenu.title}</Link></li>;
+                      return <li key={keyMenu}><Link to={itemMenu.url}>{itemMenu.title}</Link></li>;
                     })
                   }
                 </Menus>

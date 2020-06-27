@@ -1,0 +1,110 @@
+.ini{
+  &-flex{
+    display: flex;
+    &.flex-direction{
+      &-column{
+        flex-direction: column;
+      }
+      &-row{
+        flex-direction: row;
+      }
+      &-wrap{
+        flex-wrap: wrap;
+      }
+    }
+    &.justify-content{
+      &-center{
+        justify-content: center;
+      }
+      &-space-around{
+        justify-content: space-around;
+      }
+      &-space-between{
+        justify-content: space-between;
+      }
+      &-space-evenly{
+        justify-content: space-evenly;
+      }
+      &-end{
+        justify-content: end;
+      }
+      &-flex-end{
+        justify-content: flex-end;
+      }
+      &-start{
+        justify-content: start;
+      }
+      &-flex-start{
+        justify-content: flex-start;
+      }
+    }
+    &.justify-items{
+      &-center{
+        justify-items: center;
+      }
+      &-end{
+        justify-items: end;
+      }
+      &-flex-end{
+        justify-items: flex-end;
+      }
+      &-start{
+        justify-items: start;
+      }
+      &-flex-start{
+        justify-items: flex-start;
+      }
+    }
+    &.align-content{
+      &-center{
+        align-content: center;
+      }
+      &-space-around{
+        align-content: space-around;
+      }
+      &-space-between{
+        align-content: space-between;
+      }
+      &-space-evenly{
+        align-content: space-evenly;
+      }
+      &-end{
+        align-content: end;
+      }
+      &-flex-end{
+        align-content: flex-end;
+      }
+      &-start{
+        align-content: start;
+      }
+      &-flex-start{
+        align-content: flex-start;
+      }
+    }
+    &.align-items{
+      &-center{
+        align-items: center;
+      }
+      &-end{
+        align-items: end;
+      }
+      &-flex-end{
+        align-items: flex-end;
+      }
+      &-start{
+        align-items: start;
+      }
+      &-flex-start{
+        align-items: flex-start;
+      }
+    }
+    &.flex-wrap{
+      &-nowrap{
+        flex-wrap: nowrap;
+      }
+      &-wrap{
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.ini{
+  &-grids{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -8px;
+    margin-left: -8px;
+  }
+  &-grid{
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    padding-right: 8px;
+    padding-left: 8px;
+    @for $i from 1 through 12 {
+      &.is{
+        &-#{$i} {
+          flex: none;
+          width: 100%/(12/$i);
+        }
+      }
+    }
+    @media (min-width: 0px) {
+      @for $i from 1 through 12 {
+        &.xsmall{
+          &-#{$i} {
+            -ms-flex: 0 0 100%/(12/$i);
+            flex: 0 0 100%/(12/$i);
+            max-width: 100%/(12/$i);
+          }
+        }
+      }
+    }
+    @media (min-width: 576px) {
+      @for $i from 1 through 12 {
+        &.small{
+          &-#{$i} {
+            -ms-flex: 0 0 100%/(12/$i);
+            flex: 0 0 100%/(12/$i);
+            max-width: 100%/(12/$i);
+          }
+        }
+      }
+    }
+    @media (min-width: 768px) {
+      @for $i from 1 through 12 {
+        &.medium{
+          &-#{$i} {
+            -ms-flex: 0 0 100%/(12/$i);
+            flex: 0 0 100%/(12/$i);
+            max-width: 100%/(12/$i);
+          }
+        }
+      }
+    }
+    @media (min-width: 992px) {
+      @for $i from 1 through 12 {
+        &.large{
+          &-#{$i} {
+            -ms-flex: 0 0 100%/(12/$i);
+            flex: 0 0 100%/(12/$i);
+            max-width: 100%/(12/$i);
+          }
+        }
+      }
+    }
+    @media (min-width: 1200px) {
+      @for $i from 1 through 12 {
+        &.xlarge{
+          &-#{$i} {
+            -ms-flex: 0 0 100%/(12/$i);
+            flex: 0 0 100%/(12/$i);
+            max-width: 100%/(12/$i);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "props": "flexDirection",
+    "type": "string",
+    "defaultValue": "-",
+    "required": "false",
+    "description": "column | row | wrap"
+  },
+  {
+    "props": "flexWrap",
+    "type": "string",
+    "defaultValue": "-",
+    "required": "false",
+    "description": "nowrap | wrap"
+  },
+  {
+    "props": "alignItems",
+    "type": "string",
+    "defaultValue": "-",
+    "required": "false",
+    "description": "center | space-around | space-between | space-evenly | end | flex-end | start | flex-start"
+  },
+  {
+    "props": "alignContent",
+    "type": "string",
+    "defaultValue": "-",
+    "required": "false",
+    "description": "center | end | flex-end | start | flex-start"
+  },
+  {
+    "props": "justifyItems",
+    "type": "string",
+    "defaultValue": "-",
+    "required": "false",
+    "description": "center | space-around | space-between | space-evenly | end | flex-end | start | flex-start"
+  },
+  {
+    "props": "justifyContent",
+    "type": "string",
+    "defaultValue": "-",
+    "required": "false",
+    "description": "center | end | flex-end | start | flex-start"
+  },
+  {
+    "props": "fullHeight",
+    "type": "boolean",
+    "defaultValue": "false",
+    "required": "false",
+    "description": "true | false"
+  }
+]
