@@ -12,6 +12,8 @@ npm install ini-design
 ```
 yarn add ini-design
 ```
+## Documentation
+[Show documenation](http://ini-design.ovinsyah.com/react/introduction)
 ## Usage
 ```jsx
 import "ini-design/dist/ini.scss"

@@ -22,6 +22,10 @@
       {
         "title": "Flexbox",
         "url":  "/react/foundation/flexbox"
+      },
+      {
+        "title": "Icon",
+        "url":  "/react/foundation/icon"
       }
     ]
   },

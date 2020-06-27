@@ -17,7 +17,7 @@ const formatTable = [
 export default () => {
   return (
     <Layout title="Flexbox" description="Ini Flexbox">
-      <Markdown className="ini-m-b-5">{`import { IniGrids, IniGrid } from 'ini-design';`}</Markdown>
+      <Markdown className="ini-m-b-5">{`import { IniFlexbox } from 'ini-design';`}</Markdown>
       <div className="ini-m-b-5">
         <h5 className="ini-heading-5 ini-m-b-2">Flex Direction = column</h5>
         <Box>
