@@ -12,6 +12,7 @@ import ViewReactInput from './views/React/Input';
 import ViewReactGrids from './views/React/Grids';
 import ViewReactFlexbox from './views/React/Flexbox';
 import ViewReactIcon from './views/React/Icon';
+import ViewReactSpacing from './views/React/Spacing';
 
 
 import "ini-design/dist/ini.scss";
@@ -31,6 +32,7 @@ export default () => {
         <Route exact={true} path="/react/foundation/grids" component={ViewReactGrids} />
         <Route exact={true} path="/react/foundation/flexbox" component={ViewReactFlexbox} />
         <Route exact={true} path="/react/foundation/icon" component={ViewReactIcon} />
+        <Route exact={true} path="/react/foundation/spacing" component={ViewReactSpacing} />
 
         <Route exact={true} path="/inicss/introduction" component={() => ViewIntroduction({isInicss: true})} />
       </Switch>

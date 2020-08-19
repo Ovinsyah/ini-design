@@ -16,16 +16,20 @@
     "title": "Foundation",
     "list": [
       {
-        "title": "Grids",
-        "url":  "/react/foundation/grids"
-      },
-      {
         "title": "Flexbox",
         "url":  "/react/foundation/flexbox"
       },
       {
+        "title": "Grids",
+        "url":  "/react/foundation/grids"
+      },
+      {
         "title": "Icon",
         "url":  "/react/foundation/icon"
+      },
+      {
+        "title": "Spacing",
+        "url":  "/react/foundation/spacing"
       }
     ]
   },
